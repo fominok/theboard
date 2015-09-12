@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}606R0{% endblock %}
+
+{% block content %}
+    {% for thread in threads %}
+        <div class="thread_name">
+            <a href="{% url 'thread' thread.id %}">{{ thread.name }}</a>
+        </div>
+    {% endfor %}
+{% endblock content %}

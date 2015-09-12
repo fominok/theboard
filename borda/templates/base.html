@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>{% block title %}board!{% endblock %}</title>
+    <link href="{% static "bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "base.css" %}" rel="stylesheet">
+</head>
+<body>
+    <div id="header">Tha bo9rd</div>
+    <hr id="header-line">
+    {% block content %}
+
+    {% endblock content %}
+
+    <script src="{% static "jquery-2.1.4.min.js" %}"></script>
+    <script src="{% static "bootstrap.min.js" %}"></script>
+</body>
+</html>
