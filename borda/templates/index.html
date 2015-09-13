@@ -1,8 +1,14 @@
 {% extends "base.html" %}
 
-{% block title %}606R0{% endblock %}
+{% block title %}board!{% endblock %}
+{% load staticfiles %}
+{% block rels %}<link rel="stylesheet" href="{% static "index.css" %}">{% endblock %}
 
 {% block content %}
+    <div id="menu">
+        Тестовый раздел
+        <a href="#">[Создать тред]</a>
+    </div>
     {% for thread in threads %}
         <div class="thread_name">
             <a href="{% url 'thread' thread.id %}">{{ thread.name }}</a>

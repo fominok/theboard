@@ -1,19 +1,19 @@
 #header {
-    min-height: 100px;
-    max-height: 100px;
-    background-color: #204d74;
-    font-family: "Lucida Console", Monaco, monospace;
-    font-size: 90px;
-    padding-left: 13%;
-    text-shadow: 0px 0px 22px rgb(153, 235, 255),
-                 0px 0px 22px rgb(153, 235, 255),
-                 0px 0px 22px rgb(153, 235, 255);
+    min-height: 130px;
+    max-height: 130px;
+    background-color: #FFAA00;
+    font-family: Florence, cursive;
+    padding-left: 15%;
+    font-size: 20px;
 }
 
 #header-line {
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin-top: 0px;
+    margin-bottom: 70px;
     color: #122b40;
-    min-height: 5px;
     border-color: #122b40;
+}
+
+body {
+    background-color: #A66F00;
 }

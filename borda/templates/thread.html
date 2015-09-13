@@ -1,11 +1,18 @@
 {% extends "base.html" %}
 
-{% block title %}{{ thread_name }} thread{% endblock %}
+{% block title %}{{ thread_name }} Thread{% endblock %}
+{% load staticfiles %}
+{% block rels %}<link rel="stylesheet" href="{% static "thread.css" %}">{% endblock %}
 
 {% block content %}
     {% for post in posts %}
         <div class="thread_post">
-            {{ post.post_text }}
+            <div class="thread_post_header">
+                N{{ post.id }}
+            </div>
+            <div class="thread_post_body">
+                {{ post.post_text }}
+            </div>
         </div>
     {% endfor %}
 {% endblock content %}

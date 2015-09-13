@@ -3,12 +3,14 @@
 <head lang="en">
     {% load staticfiles %}
     <meta charset="UTF-8">
-    <title>{% block title %}board!{% endblock %}</title>
+    <title>{% block title %}Redefine pls{% endblock %}</title>
+    <link rel="shortcut icon" type="image/png" href="{% static "favicon.ico" %}"/>
     <link href="{% static "bootstrap.min.css" %}" rel="stylesheet">
     <link href="{% static "base.css" %}" rel="stylesheet">
+    {% block rels %}{% endblock %}
 </head>
 <body>
-    <div id="header">Tha bo9rd</div>
+    <div id="header"><img src="{% static "logo.png" %}">Кривые логотипы и не только!</div>
     <hr id="header-line">
     {% block content %}
 

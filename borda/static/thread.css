@@ -1,0 +1,17 @@
+.thread_post {
+    margin-bottom: 20px;
+    margin-left: 20%;
+    width: 50%;
+    max-width: 50%;
+}
+
+.thread_post_header {
+    background-color: #BF8F30;
+    padding-left: 5%;
+}
+
+.thread_post_body {
+    background-color: #FFD073;
+    padding-left: 5%;
+    min-height: 80px;
+}
