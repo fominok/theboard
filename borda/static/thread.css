@@ -20,6 +20,11 @@
     padding-left: 5%;
 }
 
+.thread_post_header .post_date {
+    float: right;
+    margin-right: 10px;
+}
+
 .thread_post_body {
     background-color: #FFD073;
     padding-left: 5%;
