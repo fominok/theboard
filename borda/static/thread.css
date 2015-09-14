@@ -46,3 +46,17 @@
 .post_pic {
     max-width: 100%;
 }
+
+#post_input_field {
+    resize: none;
+    overflow: scroll;
+    overflow-x: auto;
+}
+
+#post_maker a {
+    font-size: 20px;
+}
+
+#post_maker {
+    display: none;
+}

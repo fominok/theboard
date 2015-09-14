@@ -5,5 +5,5 @@ from django.conf.urls import include, url
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url(r'^thread(?P<thread_id>[0-9]+)/$', views.thread, name='thread'),
+    url(r'^thread(?P<thread_id>[0-9]+)/$', views.Threadpage.as_view(), name='thread'),
 ]
