@@ -10,8 +10,13 @@
         <a href="#">[Создать тред]</a>
     </div>
     {% for thread in threads %}
-        <div class="thread_name">
-            <a href="{% url 'thread' thread.id %}">{{ thread.name }}</a>
-        </div>
+            <a href="{% url 'thread' thread.id %}">
+                <div class="thread_name">
+                {{ thread.name }}
+                </div>
+            </a>
     {% endfor %}
 {% endblock content %}
+{% block scripts %}
+    <script src="{% static "index.js" %}"></script>
+{% endblock scripts %}

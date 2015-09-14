@@ -5,13 +5,26 @@
 {% block rels %}<link rel="stylesheet" href="{% static "thread.css" %}">{% endblock %}
 
 {% block content %}
+    <div id="menu">
+        {{ thread_name }}
+        <a href="#">[Ответить в тред]</a>
+        <a href="{% url "index" %}">[Назад]</a>
+    </div>
     {% for post in posts %}
         <div class="thread_post">
             <div class="thread_post_header">
-                N{{ post.id }}
+                <span class="post_num">#{{ post.id }}</span>
+                <span class="post_date">{{ post.pub_date}}</span>
             </div>
             <div class="thread_post_body">
-                {{ post.post_text }}
+                <div class="thread_post_pic">
+                    {% if post.pic %}
+                    <img class="post_pic" src="{{ post.pic.url }}">
+                    {% endif %}
+                </div>
+                <div class="thread_post_text">
+                    {{ post.post_text }}
+                </div>
             </div>
         </div>
     {% endfor %}
