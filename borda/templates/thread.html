@@ -15,7 +15,7 @@
         <form id="form" method="post" enctype="multipart/form-data">
             {% csrf_token %}
             {{ form }}
-            <a href="#" onclick="form.submit()">[Отправить]</a>
+            <a href="#" id="submit_link">[Отправить]</a>
         </form>
     </div>
     {% for post in posts %}

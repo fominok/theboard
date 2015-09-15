@@ -34,3 +34,5 @@ class Threadpage(View):
             p.pic = request.FILES.get('picture', '')
             p.save()
             return HttpResponseRedirect('')
+        else:
+            return HttpResponseRedirect('')

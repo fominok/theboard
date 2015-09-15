@@ -8,7 +8,7 @@
     font-family: "Lucida Console", Monaco, monospace;
 }
 
-.thread_post {
+.thread_post, #post_maker {
     margin-bottom: 20px;
     margin-left: 20%;
     width: 50%;
@@ -51,6 +51,7 @@
     resize: none;
     overflow: scroll;
     overflow-x: auto;
+    width: 100%;
 }
 
 #post_maker a {
@@ -59,4 +60,10 @@
 
 #post_maker {
     display: none;
+    overflow: hidden;
+}
+
+
+#submit_link {
+    float: right;
 }

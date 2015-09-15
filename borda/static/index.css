@@ -12,7 +12,7 @@
     padding-top: 20px;
 }
 
-.thread_name_focus {
+.thread_name:hover {
     background-color: #FFC740;
 }
 
